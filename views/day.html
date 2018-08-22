@@ -2,9 +2,9 @@
 <h2 class="date"> {{day.date | date }} </h2>
 
 
-<div class="event">
+<div class="event" ng-repeat="event in day.events">
   <a href="#/{{$index}}">
-    <h3 class="name"> {{day.events.name}} </h3>
-    <p><span class="from">  {{day.events.from}}  </span> - <span class="to">  {{day.events.to}}  </span></p>
+    <h3 class="name"> {{event.name}} </h3>
+    <p><span class="from">  {{event.from}}  </span> - <span class="to">  {{event.to}}  </span></p>
   </a>
 </div>
