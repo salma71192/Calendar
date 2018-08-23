@@ -5,6 +5,6 @@
 <div class="event" ng-repeat="event in day.events">
   <a href="#/{{$index}}">
     <h3 class="name"> {{event.name}} </h3>
-    <p><span class="from">  {{event.from}}  </span> - <span class="to">  {{event.to}}  </span></p>
+    <p><span class="from">  {{event.from | date:'shortTime'}}  </span> - <span class="to">  {{event.to | date:'shortTime'}}  </span></p>
   </a>
 </div>
