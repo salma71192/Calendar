@@ -1,5 +1,5 @@
 <!-- Format a date so it displays in the format "Friday 1/16" -->
-<h2 class="date"> {{day.date | date }} </h2>
+<h2 class="date"> {{day.date | date:'longTime' }} </h2>
 
 
 <div class="event" ng-repeat="event in day.events">
