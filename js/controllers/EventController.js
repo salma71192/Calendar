@@ -1,5 +1,5 @@
-app.controller('DayController', ['$scope', 'events',  function($scope, events) {
-	events.success(function(data) {
-    $scope.day = data;
+app.controller('EventController', ['$scope', 'events', '$routeParams', function($scope, events, $routeParams) {
+  events.success(function(data) {
+    $scope.event = data.events[$routeParams.id];
   });
 }]);
